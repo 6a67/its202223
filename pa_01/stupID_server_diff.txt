@@ -1,0 +1,15 @@
+16d15
+< import time
+35d33
+<     access = {}
+44,53d41
+<                 if addr[0] in access:
+<                     if time.time() - access[addr[0]] < 1:
+<                         conn.send('02 - Connection refused.'.encode())
+<                         conn.close()
+<                         access[addr[0]] = time.time()
+<                         print("Blocked IP: " + str(addr[0]))
+<                         break
+<                 else:
+<                     access[addr[0]] = time.time()
+< 
